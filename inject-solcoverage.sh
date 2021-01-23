@@ -6,7 +6,7 @@ set -o errexit
 
 # export env
 export CI=''
-export LC_ALL=C
+export LC_ALL=C sort -t. -k 1,1 -k 2,2n -k 3,3n
 
 # ensure CI enviornment
 yarn --version || exit 0
@@ -25,3 +25,4 @@ cat package.json
 
 # run commands 
 yarn run coverage
+
