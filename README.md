@@ -6,9 +6,6 @@
 
 ```bash
 $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
-
-
-
 ```
 
 ```yaml
@@ -21,15 +18,17 @@ $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
 ```
 
 ##### Setting an error message
-
+```bash
 ::error file={name},line={line},col={col}::{message}
+```
 
 ##### Setting a warning message
-
+```bash
 ::warning file={name},line={line},col={col}::{message}
-
+```
+```bash
 echo "::warning file=app.js,line=1,col=5::Missing semicolon"
-
+```
 #### Group log lines
 
 ```bash
